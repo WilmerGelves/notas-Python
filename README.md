@@ -1,0 +1,1 @@
+Este repositorio solo contiene información de las notas generales en mi aprendizaje con python. Es una guía de los conceptos. 
