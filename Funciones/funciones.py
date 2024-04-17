@@ -22,4 +22,8 @@ def mi_funcion(nombre,apellido):
     nombre_completo = nombre, apellido
     print(nombre_completo)
 
-print(mi_funcion('Wilmer','Gelves'))
+mi_funcion('Wilmer','Gelves')
+
+
+
+
