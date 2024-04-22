@@ -1,4 +1,5 @@
 import os 
+import modules.productos as p
 cesto = []
 opcion = 0
 menu = '1. agregar producto\n2. eliminar producto\n3. modificar producto\n4. buscar producto\n5. total\n6. salir'
@@ -13,22 +14,11 @@ while(opcion <6):
     opcion = int(input(':)_'))
     match (opcion):
         case 1:
-            isaddelement = True
-            while (isaddelement):
-                os.system('cls')
-                nombre = input('ingrese el nombre del producto :').upper()
-                valor = float(input(f'ingrese el valor de {nombre}: '))
-                cantidad = int(input(f'ingresa cantida de {nombre}: '))
-                producto = [nombre,valor,cantidad]
-                cesto.append(producto)
-                isaddelement = bool(input('desea agregar otro poducto....s(si)o enter(no)'))
+            p.AddProduct(cesto)
         case 2:
-            palabra = input ('ingrese el nombre del producto a borrar: ').upper()
-            for i,item in enumerate(cesto):
-                if palabra in item:
-                    cesto.pop(i)
-                    break
-            print(cesto)
+            os.system('cls')
+            cesto.pop(p.SearchElemnt(cesto)[0])
+            print(p.SearchElemnt(cesto))
             os.system('pause')
         case 3:
             palabra = input ('ingrese el nombre del producto a modificar').upper()

@@ -24,6 +24,13 @@ def mi_funcion(nombre,apellido):
 
 mi_funcion('Wilmer','Gelves')
 
+colores = ['rojo','amarillo','azul']
 
+#paso de valor por referencia.
+def agregarColor(colores, color):
+    colores.append(color)
 
+color = 'verde'
+agregarColor(colores,color)
 
+print(colores)
