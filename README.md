@@ -1,4 +1,4 @@
-#Notas generales de Python
+# Notas generales de Python
 
 Este repositorio contiene multiples conceptos básicos sobre la ruta Python. 
 
